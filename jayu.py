@@ -76,6 +76,10 @@ for word in a:
         d5[word] = a.count(word)
 print(d5)'''
 
+
+
+
+
 '''s = "hello world welcomr to python programming hi there"
 d ={}
 a = s.split()
@@ -94,14 +98,14 @@ for index,word in enumerate(name):
     else:
         d[word]+=[index]
 print(d)'''
-
+'''
 d = {"1": 'one', "2":'two', "3": 'three', "4": 'four'}
 d1 = {}
 for key in d:
     value = d[key]
     d1[value] = key
 print(d1)
-
+'''
 
 
 

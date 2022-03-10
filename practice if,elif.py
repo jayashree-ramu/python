@@ -60,41 +60,44 @@ while i<5:
     print(i)'''
 
 
+"""custom sorting """
+l = ["python", "java", "c", "ruby", "alpha"]
+# print(sorted(l,key = len, reverse = True))
 
-love = "sameeulla"
-my_world = "my lovely husbanda"
-his_princes = "jasmeen"
-month = 9
-couple = f"my husband {love} is has beauty like nature, my whole world is {my_world} and \n" \
-         f"his princes means his wife {his_princes} ," \
-         f"they both are soulmate to each other they are best in thier world\n" \
-         f",and after {month} they get love symbole as"
-print(couple)
+d = {"alpha":2, "beta":5, "gama":1, "anumerate":0}
+# print(sorted(d.items()))
 
+# "shortest", "*", "longest" == print(sorted(l, key = len))
 
+# print(sorted(l, key = lambda item: item[len(item)//2]))
 
+a = "Python is a programming language"
+b = a.split()
+shortest,*rest,longest = sorted(b, key=len)
+# print([shortest, len(shortest)], [longest, len(longest)])
 
+def last(ele):
+    return ele[-1]
 
-gombe = "my son my daughter"
-sonu = gombe.split()
-for chinnu in sonu:
-    if chinnu in sonu:
-        if sonu[1] == " muddu":
-            print("allah gives idea to keep name")
-        elif sonu[3] == "daughter":
-            print("as like my husband wish")
-        else:
-            print("my mother in law wish to keep my baby name")
+# print(sorted(b, key = last))
+# print(sorted(b, key = lambda item : item[0]))
 
+# print(sorted(b))
+"""wap list element based on the last element the last char of each string"""
+# print(sorted(b, key = lambda item : item[-1]))
 
+d = {"gamil":5, "apple":3, "walmfgfgart":7, "flipkart":8 }
+# print(dict(sorted(d.items(), key=lambda item: len(item[0][-1]))))
 
-
-
-
-
-
+temperature = [("delhi", 32),("mumba",27),("kolkotta",30),("chennai",35)]
+# print(sorted(temperature,key=lambda item: item[-1]))
 
 
+# a = "hi how are you how is you life"
+# b = a.split()
+# d_count = {item:b.count(item) for item in b}
+# res = sorted(d_count.items(), key=lambda char: char[-1])
+# print(res)
 
 
 
